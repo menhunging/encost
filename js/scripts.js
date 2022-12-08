@@ -118,13 +118,12 @@ $(document).ready(function () {
         let scrollOff = false
         var block_show = null;
         let animationAll = $('.animation')
-
+        let lastDeferr = 0
         if ($(window).width() > 768) {
             scrollTracking();
         }
 
         function scrollTracking() {
-
 
             var wt = $(window).scrollTop();
             var wh = $(window).height();
@@ -133,15 +132,18 @@ $(document).ready(function () {
 
             if (wt + wh >= et && wt + wh - eh * 2 <= et + (wh - eh)) {
                 if (block_show == null || block_show == false && !scrollOff) {
-
-                    animationAll.map(function (index, item) {
-                        setTimeout(() => {
-                            $('.howAnimation .manager ul li').removeClass('active')
-                            $(this).addClass('active')
-                        }, 1000 * index)
-                    })
-
-
+                    let promise = new $.Deferred(), fn = () => {
+                        animationAll.map(function (index, item) {
+                            setTimeout(() => {
+                                $('.howAnimation .manager ul li').removeClass('active')
+                                $(this).addClass('active')
+                            }, 1000 * index)
+                        })
+                        return promise
+                    }
+                    lastDeferr ? lastDeferr.then(fn) : fn()
+                    //запоминаем последнее звено цепочки обещаний
+                    lastDeferr = promise
                 }
                 block_show = true;
             } else {
