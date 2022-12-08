@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gotham Pro";
+}
+
+body {
+    font-family: "Gotham Pro";
+    min-width: 320px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.sectionTitle {
+    color: #464d66;
+    font-size: 96px;
+    line-height: 100px;
+    font-weight: 300;
+}
+
+.sectionDesc {
+    font-size: 36px;
+    color: #464d66;
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-dots {
+    width: 100%;
+    margin: 0 0 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border: solid 1px #008a33;
+        @include border-radius(50%);
+        color: transparent;
+        margin: 0 5px;
+        &.slick-active {
+            background-color: #008a33;
+        }
+        button {
+            display: none;
+        }
+    }
+}

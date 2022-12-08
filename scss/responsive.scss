@@ -1,0 +1,256 @@
+// responsive style
+
+@media (max-width: 1219px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .tarifsWrapper {
+        padding: 0;
+    }
+
+    .solutionsList,
+    .tarisfList {
+        .slick-track {
+            padding: 20px 0;
+        }
+    }
+
+    .tarifItem {
+        min-height: 375px !important;
+        padding: 65px 20px 0 !important;
+        .tarifTitle {
+            & > * {
+            }
+            small {
+            }
+        }
+        .tarifText {
+        }
+        .tarifBtn {
+        }
+    }
+
+    .solutionsWrapper {
+        padding: 30px 0;
+    }
+
+    .sectionTitle {
+        text-align: center;
+        font-size: 70px;
+    }
+
+    .sectionDesc {
+        text-align: center;
+    }
+
+    .howWork {
+        .sectionTitle {
+            text-align: left;
+        }
+
+        .sectionDesc {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .advItem {
+        .advantageText {
+            font-size: 18px;
+            min-height: 115px;
+        }
+    }
+
+    .howWork {
+        flex-wrap: wrap;
+        .leftSide {
+            width: 100%;
+        }
+        .rightSide {
+            display: none;
+        }
+        .howAnimation {
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .howAnimation {
+        flex-wrap: wrap;
+
+        .left {
+            width: 100%;
+            flex-direction: column;
+        }
+        .right {
+            width: 100%;
+            margin: 30px auto;
+            & > .loadBlock {
+                display: none;
+            }
+        }
+        .server {
+            margin-top: 30px;
+        }
+        .manager {
+            .loadBlock {
+                display: none;
+            }
+            .textRight,
+            .textBottom {
+                display: none;
+            }
+        }
+        .production {
+            margin-top: 0;
+            padding-top: 30px;
+            padding-bottom: 90px;
+            margin-bottom: -30px;
+        }
+        .listMachine {
+            padding-top: 20px;
+            .itemMachine {
+                &::after,
+                &::before {
+                    display: none;
+                }
+            }
+            .circle {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advItem {
+        .advantageText {
+            min-height: inherit;
+            min-height: 115px;
+        }
+        .advItem {
+            ul {
+                li {
+                    & + li {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 639px) {
+    .tarifItem {
+        min-height: 375px !important;
+        padding: 30px 15px 10px !important;
+        .tarifTitle {
+            & > * {
+            }
+            small {
+            }
+        }
+        .tarifText {
+        }
+        .tarifBtn {
+        }
+    }
+
+    .sectionTitle {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .advItem {
+        .title {
+            font-size: 24px;
+        }
+        .advPercent {
+            font-size: 50px;
+        }
+
+        .advantageText {
+            font-size: 18px;
+            margin: 10px auto 0;
+        }
+    }
+
+    .advList {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .solutionItem {
+        padding: 15px 10px;
+        .nubmerInvis {
+            right: 1px;
+            top: -31px;
+            font-size: 185px;
+        }
+        .solutionTitle {
+            & > * {
+                font-size: 38px;
+            }
+        }
+        .solutionInfo {
+            .solutionNum {
+                font-size: 38px;
+                margin-right: 10px;
+            }
+        }
+        .soulPrice {
+            margin-top: 30px;
+        }
+    }
+
+    .solutionsList {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .sectionDesc {
+        font-size: 20px;
+    }
+
+    .howAnimation {
+        .production {
+            padding: 30px 15px 70px;
+            text-align: center;
+        }
+        .listMachine {
+            padding-top: 0;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            .itemMachine {
+                width: 100%;
+                margin-top: 50px;
+
+                & + .itemMachine {
+                }
+            }
+        }
+    }
+
+    .howWork {
+        .leftSide {
+            .howWorkText {
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+        .controls {
+            margin-top: 30px;
+        }
+        .manager {
+            ul {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
