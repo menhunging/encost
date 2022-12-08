@@ -137,7 +137,7 @@ $(document).ready(function () {
                             setTimeout(() => {
                                 $('.howAnimation .manager ul li').removeClass('active')
                                 $(this).addClass('active')
-                            }, 1000 * index)
+                            }, 300 * index)
                         })
                         return promise
                     }

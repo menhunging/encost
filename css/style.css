@@ -141,6 +141,14 @@ body {
   text-align: center;
   display: inline-block;
   height: 54px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.tarifItem .tarifBtn:hover {
+  background-color: #ffc600;
+  color: #464d66;
 }
 .tarifItem.main {
   background-color: #4f566e;
@@ -336,6 +344,14 @@ body {
   text-align: center;
   display: inline-block;
   height: 54px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.solutionItem .btn:hover {
+  background-color: #ffc600;
+  color: #464d66;
 }
 .solutionItem.small {
   color: #464d66;
@@ -377,6 +393,9 @@ body {
 .solutionItem.big .btn {
   background-color: #ffc600;
   color: #464d66;
+}
+.solutionItem.big .btn:hover {
+  background-color: #fff;
 }
 
 .advWrapper {
@@ -605,6 +624,14 @@ body {
   text-align: center;
   display: inline-block;
   height: 54px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.howWork .btn:hover {
+  background-color: #ffc600;
+  color: #464d66;
 }
 
 .howAnimation {
@@ -1089,17 +1116,20 @@ body {
   }
   .howAnimation .left {
     width: 100%;
-    flex-direction: column;
   }
   .howAnimation .right {
     width: 100%;
-    margin: 30px auto;
+    margin: 30px auto 0;
   }
   .howAnimation .right > .loadBlock {
     display: none;
   }
   .howAnimation .server {
-    margin-top: 30px;
+    margin-top: -30px;
+    margin-bottom: -75px;
+  }
+  .howAnimation .manager {
+    padding-bottom: 60px;
   }
   .howAnimation .manager .loadBlock {
     display: none;
@@ -1110,9 +1140,8 @@ body {
   }
   .howAnimation .production {
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 90px;
-    margin-bottom: -30px;
   }
   .howAnimation .listMachine {
     padding-top: 20px;
@@ -1188,7 +1217,7 @@ body {
   }
 
   .howAnimation .production {
-    padding: 30px 15px 70px;
+    padding: 60px 15px 30px;
     text-align: center;
   }
   .howAnimation .listMachine {

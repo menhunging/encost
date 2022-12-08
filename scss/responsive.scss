@@ -83,19 +83,20 @@
 
         .left {
             width: 100%;
-            flex-direction: column;
         }
         .right {
             width: 100%;
-            margin: 30px auto;
+            margin: 30px auto 0;
             & > .loadBlock {
                 display: none;
             }
         }
         .server {
-            margin-top: 30px;
+            margin-top: -30px;
+            margin-bottom: -75px;
         }
         .manager {
+            padding-bottom: 60px;
             .loadBlock {
                 display: none;
             }
@@ -106,9 +107,8 @@
         }
         .production {
             margin-top: 0;
-            padding-top: 30px;
+            padding-top: 60px;
             padding-bottom: 90px;
-            margin-bottom: -30px;
         }
         .listMachine {
             padding-top: 20px;
@@ -218,7 +218,7 @@
 
     .howAnimation {
         .production {
-            padding: 30px 15px 70px;
+            padding: 60px 15px 30px;
             text-align: center;
         }
         .listMachine {

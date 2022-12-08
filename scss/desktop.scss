@@ -67,6 +67,11 @@
         text-align: center;
         display: inline-block;
         height: 54px;
+        @include transition(all 00.3s);
+        &:hover {
+            background-color: #ffc600;
+            color: #464d66;
+        }
     }
     &.main {
         background-color: #4f566e;
@@ -240,6 +245,11 @@
         text-align: center;
         display: inline-block;
         height: 54px;
+        @include transition(all 0.3s);
+        &:hover {
+            background-color: #ffc600;
+            color: #464d66;
+        }
     }
     &.small {
         color: #464d66;
@@ -269,6 +279,9 @@
         .btn {
             background-color: #ffc600;
             color: #464d66;
+            &:hover {
+                background-color: #fff;
+            }
         }
     }
 }
@@ -487,6 +500,11 @@
         text-align: center;
         display: inline-block;
         height: 54px;
+        @include transition(all 0.3s);
+        &:hover {
+            background-color: #ffc600;
+            color: #464d66;
+        }
     }
 }
 
