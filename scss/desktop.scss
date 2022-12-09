@@ -485,6 +485,14 @@
         background-size: cover;
         top: -50px;
         height: 450px;
+        img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
     }
     .controls {
         text-align: left;
