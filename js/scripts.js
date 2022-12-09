@@ -135,6 +135,16 @@ $(document).ready(function () {
 
             ]
         });
+
+        Fancybox.bind(".reviewsList a", {
+            groupAll: true,
+            on: {
+                ready: (fancybox) => {
+                    console.log(`fancybox #${fancybox.id} is ready!`);
+                }
+            }
+        });
+
     }
 
     if ($('.howAnimation').length > 0) {
