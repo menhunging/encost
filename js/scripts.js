@@ -91,6 +91,29 @@ $(document).ready(function () {
         });
     }
 
+    if ($('.trustList').length > 0) {
+        $('.trustList').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            responsive: [
+
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        dots: true,
+                    }
+                },
+
+            ]
+        });
+    }
+
     if ($('.reviewsList').length > 0) {
         $('.reviewsList').slick({
             infinite: false,
@@ -161,8 +184,6 @@ $(document).ready(function () {
         });
     }
 
-
-
 });
 
 $(window).resize(function () {
@@ -171,6 +192,5 @@ $(window).resize(function () {
         $('.solutionsList').slick('refresh');
         $('.advList').slick('refresh');
     }
-
 });
 

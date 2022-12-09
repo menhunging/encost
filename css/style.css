@@ -1055,6 +1055,193 @@ body {
   opacity: 1 !important;
 }
 
+.trustWrapper {
+  padding: 50px 0;
+  background-color: #e8f4ef;
+  background-image: url("../img/bg-soul.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-bottom: solid 1px #cecece;
+}
+
+.trustListWrapper {
+  max-width: 950px;
+  margin: 65px auto 0;
+}
+
+.trustList {
+  background-color: #fff;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+}
+.trustList .trustItem {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trustList .leftSide {
+  color: #464d66;
+  width: calc(50% - 27px);
+  padding: 48px 87px 69px 28px;
+}
+.trustList .leftSide .col + .col {
+  margin-top: 10px;
+}
+.trustList .leftSide .desc {
+  font-size: 36px;
+}
+.trustList .leftSide .cap {
+  font-size: 66px;
+  margin-top: 11px;
+}
+.trustList .leftSide .name {
+  font-size: 35px;
+  display: block;
+}
+.trustList .leftSide .adress {
+  font-size: 16px;
+  display: block;
+}
+.trustList .leftSide .text {
+  margin-top: 33px;
+  color: #464d66;
+  font-size: 16px;
+  line-height: 19px;
+}
+.trustList .leftSide .text > * {
+  color: #464d66;
+  font-size: 16px;
+  line-height: 19px;
+}
+.trustList .rightSide {
+  position: relative;
+  width: calc(50% + 27px);
+  display: flex;
+  min-height: 589px;
+}
+.trustList .rightSide .toBlock {
+  padding: 119px 36px;
+  color: #fff;
+  background-color: #464d66;
+  width: 50%;
+}
+.trustList .rightSide .toBlock .persent {
+  background-color: #ffc600;
+}
+.trustList .rightSide .fromBlock {
+  padding: 119px 36px;
+  color: #464d66;
+  width: 50%;
+  background-image: url("../img/pic-trust.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 6px) calc(100% - 25px);
+}
+.trustList .rightSide .fromBlock .persent {
+  background-color: #008a33;
+}
+.trustList .rightSide .title {
+  font-size: 33px;
+}
+.trustList .rightSide .persent {
+  color: #fff;
+  font-size: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px 11px;
+  margin-right: 5px;
+}
+.trustList .rightSide ul {
+  margin-top: 133px;
+}
+.trustList .rightSide ul li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.trustList .rightSide ul li + li {
+  margin-top: 18px;
+}
+.trustList .centerBlock {
+  color: #fff;
+  background-color: #008a33;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -68px;
+}
+.trustList .centerBlock .count {
+  font-size: 48px;
+}
+.trustList .slick-arrow {
+  cursor: pointer;
+  background-color: #008a33;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  border: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  z-index: 2;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.trustList .slick-arrow:hover {
+  background-color: #ffd02b;
+}
+.trustList .slick-arrow.slick-prev {
+  left: -180px;
+  right: auto;
+  background-image: url("../img/arrow-left.png");
+}
+.trustList .slick-arrow.slick-next {
+  right: -180px;
+  left: auto;
+  background-image: url("../img/arrow-right.png");
+}
+.trustList .slick-dots {
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  width: 100%;
+}
+
+@media (max-width: 1399px) {
+  .trustList .slick-arrow.slick-prev {
+    left: -100px;
+  }
+  .trustList .slick-arrow.slick-next {
+    right: -100px;
+  }
+
+  .reviewsList .slick-arrow.slick-prev {
+    left: -100px;
+  }
+  .reviewsList .slick-arrow.slick-next {
+    right: -100px;
+  }
+}
 @media (max-width: 1219px) {
   .container {
     width: 100%;
@@ -1092,6 +1279,10 @@ body {
   }
   .howWork .sectionDesc {
     text-align: left;
+  }
+
+  .trustWrapper {
+    padding-bottom: 120px;
   }
 }
 @media (max-width: 1199px) {
@@ -1152,6 +1343,35 @@ body {
   .howAnimation .listMachine .circle {
     display: none;
   }
+
+  .trustList .leftSide {
+    width: 100%;
+    padding: 35px;
+  }
+  .trustList .leftSide .col + .col {
+    margin-top: 10px;
+  }
+  .trustList .leftSide .cap br {
+    display: none;
+  }
+  .trustList .rightSide {
+    width: 100%;
+    flex-wrap: wrap;
+    min-height: inherit;
+  }
+  .trustList .rightSide .toBlock {
+    padding: 50px 35px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    -ms-border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .trustList .rightSide .fromBlock {
+    padding: 50px 35px;
+  }
+  .trustList .rightSide ul li + li {
+    margin-top: 18px;
+  }
 }
 @media (max-width: 767px) {
   .advItem .advantageText {
@@ -1185,6 +1405,66 @@ body {
 
   .advList {
     margin-top: 40px;
+  }
+
+  .trustList .leftSide {
+    padding: 20px;
+  }
+  .trustList .leftSide .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .trustList .leftSide .col {
+    width: 50%;
+  }
+  .trustList .leftSide .desc {
+    font-size: 12px;
+  }
+  .trustList .leftSide .cap {
+    font-size: 24px;
+  }
+  .trustList .leftSide .cap br {
+    display: block;
+  }
+  .trustList .leftSide .name {
+    font-size: 18px;
+  }
+  .trustList .leftSide .adress {
+    font-size: 14px;
+  }
+  .trustList .leftSide .text {
+    font-size: 14px;
+  }
+  .trustList .leftSide .text > * {
+    font-size: 14px;
+  }
+  .trustList .rightSide .toBlock {
+    padding: 20px;
+  }
+  .trustList .rightSide .fromBlock {
+    padding: 20px;
+    background-image: none;
+  }
+  .trustList .rightSide .title {
+    font-size: 16px;
+  }
+  .trustList .rightSide .persent {
+    font-size: 21px;
+  }
+  .trustList .rightSide ul {
+    margin-top: 75px;
+  }
+  .trustList .rightSide ul li {
+    font-size: 15px;
+  }
+  .trustList .centerBlock {
+    height: 50px;
+    font-size: 18px;
+    margin-top: -60px;
+  }
+  .trustList .centerBlock .count {
+    font-size: 34px;
   }
 }
 @media (max-width: 479px) {
@@ -1238,6 +1518,46 @@ body {
   }
   .howWork .manager ul li {
     font-size: 20px;
+  }
+
+  .trustList .rightSide .title {
+    max-width: 100px;
+    display: block;
+  }
+  .trustList .centerBlock {
+    margin-top: -50px;
+  }
+}
+@media (max-width: 359px) {
+  .trustList .leftSide .col {
+    width: 100%;
+  }
+  .trustList .leftSide .cap br {
+    display: none;
+  }
+  .trustList .rightSide .toBlock {
+    padding: 20px 10px;
+  }
+  .trustList .rightSide .fromBlock {
+    padding: 20px 10px;
+  }
+  .trustList .rightSide .title {
+    max-width: 100px;
+    display: block;
+  }
+  .trustList .rightSide .persent {
+    width: 100%;
+  }
+  .trustList .rightSide ul {
+    margin-top: 100px;
+  }
+  .trustList .rightSide ul li {
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trustList .centerBlock {
+    margin-top: -70px;
   }
 }
 

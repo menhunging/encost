@@ -1,5 +1,29 @@
 // responsive style
 
+@media (max-width: 1399px) {
+    .trustList {
+        .slick-arrow {
+            &.slick-prev {
+                left: -100px;
+            }
+            &.slick-next {
+                right: -100px;
+            }
+        }
+    }
+
+    .reviewsList {
+        .slick-arrow {
+            &.slick-prev {
+                left: -100px;
+            }
+            &.slick-next {
+                right: -100px;
+            }
+        }
+    }
+}
+
 @media (max-width: 1219px) {
     .container {
         width: 100%;
@@ -53,6 +77,10 @@
         .sectionDesc {
             text-align: left;
         }
+    }
+
+    .trustWrapper {
+        padding-bottom: 120px;
     }
 }
 
@@ -123,6 +151,63 @@
             }
         }
     }
+
+    .trustList {
+        .trustItem {
+        }
+        .leftSide {
+            width: 100%;
+            padding: 35px;
+            .row {
+            }
+            .col {
+                & + .col {
+                    margin-top: 10px;
+                }
+            }
+            .desc {
+            }
+            .cap {
+                br {
+                    display: none;
+                }
+            }
+            .name {
+            }
+            .adress {
+            }
+            .text {
+            }
+        }
+        .rightSide {
+            width: 100%;
+            flex-wrap: wrap;
+            min-height: inherit;
+            .toBlock {
+                padding: 50px 35px;
+                @include border-radius-bottom-left(20px);
+            }
+            .fromBlock {
+                padding: 50px 35px;
+            }
+            .title {
+            }
+            .persent {
+            }
+
+            ul {
+                li {
+                    & + li {
+                        margin-top: 18px;
+                    }
+                }
+            }
+        }
+        .centerBlock {
+            .count {
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -180,6 +265,77 @@
 
     .advList {
         margin-top: 40px;
+    }
+
+    .trustList {
+        .trustItem {
+        }
+        .leftSide {
+            padding: 20px;
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+            }
+            .col {
+                width: 50%;
+                & + .col {
+                }
+            }
+            .desc {
+                font-size: 12px;
+            }
+            .cap {
+                font-size: 24px;
+                br {
+                    display: block;
+                }
+            }
+            .name {
+                font-size: 18px;
+            }
+            .adress {
+                font-size: 14px;
+            }
+            .text {
+                font-size: 14px;
+                & > * {
+                    font-size: 14px;
+                }
+            }
+        }
+        .rightSide {
+            .toBlock {
+                padding: 20px;
+            }
+            .fromBlock {
+                padding: 20px;
+                background-image: none;
+            }
+            .title {
+                font-size: 16px;
+            }
+            .persent {
+                font-size: 21px;
+            }
+
+            ul {
+                margin-top: 75px;
+                li {
+                    font-size: 15px;
+                    & + li {
+                    }
+                }
+            }
+        }
+        .centerBlock {
+            height: 50px;
+            font-size: 18px;
+            margin-top: -60px;
+            .count {
+                font-size: 34px;
+            }
+        }
     }
 }
 
@@ -250,6 +406,65 @@
                 li {
                     font-size: 20px;
                 }
+            }
+        }
+    }
+
+    .trustList {
+        .rightSide {
+            .title {
+                max-width: 100px;
+                display: block;
+            }
+        }
+        .centerBlock {
+            margin-top: -50px;
+        }
+    }
+}
+
+@media (max-width: 359px) {
+    .trustList {
+        .leftSide {
+            .col {
+                width: 100%;
+            }
+
+            .cap {
+                br {
+                    display: none;
+                }
+            }
+        }
+        .rightSide {
+            .toBlock {
+                padding: 20px 10px;
+            }
+            .fromBlock {
+                padding: 20px 10px;
+            }
+            .title {
+                max-width: 100px;
+                display: block;
+            }
+            .persent {
+                width: 100%;
+            }
+
+            ul {
+                margin-top: 100px;
+                li {
+                    text-align: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    & + li {
+                    }
+                }
+            }
+        }
+        .centerBlock {
+            margin-top: -70px;
+            .count {
             }
         }
     }
