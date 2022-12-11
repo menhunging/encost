@@ -616,6 +616,8 @@ body {
   object-fit: cover;
 }
 .howWork .controls {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   color: #464d66;
   font-size: 24px;
@@ -623,6 +625,9 @@ body {
 }
 .howWork .controls > * {
   display: block;
+}
+.howWork .controls .btn + .btn {
+  margin-top: 20px;
 }
 .howWork .btn {
   cursor: pointer;
@@ -646,6 +651,14 @@ body {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+.howWork .btn.btnYellow {
+  background-color: #ffc600;
+  color: #464d66;
+}
+.howWork .btn.btnYellow:hover {
+  background-color: #c09600;
+  color: #464d66;
+}
 .howWork .btn:hover {
   background-color: #ffc600;
   color: #464d66;
@@ -653,9 +666,8 @@ body {
 
 .howAnimation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   width: 100%;
-  flex-direction: row-reverse;
 }
 .howAnimation .left {
   width: 500px;
@@ -823,7 +835,6 @@ body {
   justify-content: space-between;
   padding-top: 108px;
   position: relative;
-  flex-direction: row-reverse;
 }
 .howAnimation .listMachine .circle {
   position: absolute;
@@ -880,7 +891,7 @@ body {
   border-radius: 50%;
   margin-left: -7px;
 }
-.howAnimation .listMachine .itemMachine:nth-child(3)::after {
+.howAnimation .listMachine .itemMachine:nth-child(1)::after {
   left: 68px;
   top: -64px;
   -moz-transform: rotate(-23deg);
@@ -900,7 +911,7 @@ body {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.howAnimation .listMachine .itemMachine:nth-child(1)::after {
+.howAnimation .listMachine .itemMachine:nth-child(3)::after {
   left: -79px;
   top: -64px;
   -moz-transform: rotate(23deg);
@@ -1321,9 +1332,11 @@ body {
 @media (max-width: 1023px) {
   .howAnimation {
     flex-wrap: wrap;
+    margin-top: 50px;
   }
   .howAnimation .left {
     width: 100%;
+    flex-direction: column;
   }
   .howAnimation .right {
     width: 100%;
@@ -1334,7 +1347,7 @@ body {
   }
   .howAnimation .server {
     margin-top: -30px;
-    margin-bottom: -75px;
+    margin-bottom: -95px;
   }
   .howAnimation .manager {
     padding-bottom: 60px;
@@ -1514,7 +1527,7 @@ body {
   }
 
   .howAnimation .production {
-    padding: 60px 15px 30px;
+    padding: 30px 15px 80px;
     text-align: center;
   }
   .howAnimation .listMachine {
@@ -1526,6 +1539,10 @@ body {
     width: 100%;
     margin-top: 50px;
   }
+  .howAnimation .server {
+    margin-bottom: -85px;
+  }
+
   .howWork .leftSide .howWorkText {
     margin-top: 30px;
     font-size: 18px;

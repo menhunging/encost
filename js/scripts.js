@@ -170,7 +170,7 @@ $(document).ready(function () {
                             setTimeout(() => {
                                 $('.howAnimation .manager ul li').removeClass('active')
                                 $(this).addClass('active')
-                            }, 300 * index)
+                            }, 1000 * index)
                         })
                         return promise
                     }

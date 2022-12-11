@@ -108,9 +108,10 @@
 @media (max-width: 1023px) {
     .howAnimation {
         flex-wrap: wrap;
-
+        margin-top: 50px;
         .left {
             width: 100%;
+            flex-direction: column;
         }
         .right {
             width: 100%;
@@ -121,7 +122,7 @@
         }
         .server {
             margin-top: -30px;
-            margin-bottom: -75px;
+            margin-bottom: -95px;
         }
         .manager {
             padding-bottom: 60px;
@@ -374,7 +375,7 @@
 
     .howAnimation {
         .production {
-            padding: 60px 15px 30px;
+            padding: 30px 15px 80px;
             text-align: center;
         }
         .listMachine {
@@ -388,6 +389,10 @@
                 & + .itemMachine {
                 }
             }
+        }
+
+        .server {
+            margin-bottom: -85px;
         }
     }
 
